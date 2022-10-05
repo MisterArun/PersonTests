@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PersonTests
+﻿namespace PersonTests
 {
-    internal class IDisplayable
+    /// <summary>
+    /// Allows the person to be displayed in a MessageBox.
+    /// </summary>
+    internal interface IDisplayable
     {
+        /// <summary>
+        /// Display the person in a MessageBox.
+        /// </summary>
+        public void Display();
     }
 }
