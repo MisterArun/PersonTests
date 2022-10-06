@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person
+    public class Person : IComparable<Person>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -19,6 +19,16 @@
         /// Gets or sets the name of the person.
         /// </summary>
         public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Compares two Persons.
+        /// </summary>
+        /// <param name="person">A second person that is compared.</param>
+        /// <returns>whether the Persons match or not.</returns>
+        public int CompareTo(Person person)
+        {
+            return this.Name.CompareTo(person.Name);
+        }
 
         /// <summary>
         /// Returns a string that represents the person.
