@@ -8,6 +8,6 @@ namespace PersonTests
 {
     internal interface IMeasurable
     {
-        
+        public int Size { get; }
     }
 }
