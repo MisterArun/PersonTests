@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person
+    public class Person : IDisplayable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -19,6 +19,11 @@
         /// Gets or sets the name of the person.
         /// </summary>
         public virtual string Name { get; set; }
+
+        public void Display()
+        {
+            MessageBox.Show(this.ToString());
+        }
 
         /// <summary>
         /// Returns a string that represents the person.
