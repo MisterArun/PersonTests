@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace PersonTests
 {
-    internal interface IResettable
+    internal interface IMeasurable
     {
-        public void Reset()
-        {
-
-        }
+        
     }
 }
